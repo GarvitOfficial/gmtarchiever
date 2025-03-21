@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMT Achiever</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="emqScript.js"></script>
+    <!-- alert popup -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</head>
+<body>
+
+    <main>
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img
+              src="./res/gmtlogo.jpg"
+              alt="user" />
+            <p>GMT</p>
+          </div>
+          <ul>
+            <li class="nav-item active">
+              <a href="./index.html">
+                <i class="fa fa-map nav-icon"></i>
+                <span class="nav-text">Home</span>
+              </a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-arrow-trend-up nav-icon"></i>
+                <span class="nav-text">Trending</span>
+              </a>
+            </li> -->
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-compact-disc nav-icon"></i>
+                <span class="nav-text">EMQ </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="http://garvitofficial.000.pe/#contact">
+                <i class="fa fa-circle-play nav-icon"></i>
+                
+                <span class="nav-text">Contact</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" onclick="callAlert();">
+                <i class="fa fa-info-circle nav-icon"></i>
+                <span class="nav-text">Info</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+     
+      </nav>
+
+      <section class="content">
+        <div class="left-content">
+          <div class="slider-container">
+            <h1>GMT Achiever</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/95b52c32-f5da-4fe6-956d-a5ed118bbdd2" />
+                  <div class="slide-overlay">
+                    <h2>Welcome, Kind Person!</h2>
+                    <!-- <p>GMT Achiever offers support for your academic needs, including your IITM BS degree</p> -->
+                
+                  </div>
+                </div>
+
+                
+              
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- adding emq -->
+          <div class="albums">
+            <h1>EMQ Generator</h1>
+            <div class="album-container containers" id="questions">
+                <div class="question-block mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h4 class="mb-0">Question 1:</h4>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control answer" placeholder="Enter answer">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary add-answer-btn" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="addQuestionBtn" class="btn btn-primary">Add Question</button>
+            <button id="downloadBtn" class="btn btn-success">Download</button>
+        </div>
+
+        <br>
+
+        <!-- emq -->
+          <div class="artists">
+            <h1>Contributors</h1>
+            <div class="artist-container containers">
+              <div class="artist">
+                <img
+                  src="https://avatars.githubusercontent.com/u/68268393?v=4"
+                  alt="" />
+                <p>Garvit</p>
+                <p style="color: rgba(229, 229, 229, 0.601);">Main Developer</p>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="right-content">
+          <div class="recommended-songs">
+            <h1>Chill Music</h1>
+            
+
+
+          <div class="music-player">
+            <div class="album-cover">
+              <img src="images/album-cover.png" id="rotatingImage" alt="" />
+              <span class="point"></span>
+            </div>
+
+            <h2>Garvit</h2>
+            <p>Besomorph & Coopex</p>
+
+            <audio id="song">
+              <source src="Besomorph-Coopex-Redemption.mp3" type="audio/mpeg" />
+            </audio>
+
+            <input type="range" value="0" id="progress" />
+
+            <div class="controls">
+              <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+              </button>
+              <button class="play-pause-btn">
+                <i class="fa-solid fa-play" id="controlIcon"></i>
+              </button>
+              <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+<!-- testing code -->
+<script type="text/javascript">
+  function callAlert() {
+    swal({
+      title: "Info",
+      content: {
+        element: "div",
+        attributes: {
+          innerHTML: "<p> GMT Achiever is here to provide assistance with your academic needs, including support related to your IITM BS degree and other related topics.</p>"
+        }
+      }
+    });
+  }
+</script>
+
+<!-- end testing code -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  </body>
+
+</html>

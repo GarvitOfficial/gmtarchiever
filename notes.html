@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMT Achiever</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="pdf.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+</head>
+<body>
+    <main>
+        <nav class="main-menu">
+            <div>
+                <div class="user-info">
+                    <img src="./res/gmtlogo.jpg" alt="user" />
+                    <p>GMT</p>
+                </div>
+                <ul>
+                    <li class="nav-item active">
+                        <a href="./index.html">
+                            <i class="fa fa-map nav-icon"></i>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fa fa-compact-disc nav-icon"></i>
+                            <span class="nav-text">EMQ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://garvitofficial.000.pe/#contact">
+                            <i class="fa fa-circle-play nav-icon"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="callAlert();">
+                            <i class="fa fa-info-circle nav-icon"></i>
+                            <span class="nav-text">Info</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="content">
+            <div class="left-content">
+                <div class="slider-container">
+                    <h1>GMT Achiever</h1>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/95b52c32-f5da-4fe6-956d-a5ed118bbdd2" alt="Slide Image" />
+                                <div class="slide-overlay">
+                                    <h2>Welcome, Kind Person!</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="albums">
+                    <div class="section-with-margin section-with-padding section-four">
+                        <div class="section-four_header">
+                            <h2 class="standard-item_title">Download Notes</h2>
+                        </div>
+
+                        
+                        <div class="container"><h3>
+                          <label for="level-select">Choose Level:</label>
+                          <select id="level-select">
+                              <option value="">--Please choose an option--</option>
+                              <option value="foundation">Foundation</option>
+                              <!-- <option value="diploma">Diploma</option>
+                              <option value="degree">Degree</option> -->
+                          </select>
+                  
+                          <label for="subject-select" class="hidden" id="subject-label" style="margin-left: 12%;">Choose Subject:</label>
+                          <select id="subject-select" class="hidden">
+                              <!-- Options will be populated dynamically -->
+                          </select></h3>
+                  
+                          <div id="content" class="hidden">
+
+                              <!-- Content will be populated dynamically -->
+                          </div>
+                          <br><br><br>
+                          <p style="color: rgba(246, 246, 246, 0.559);">We are working to add more! If you have notes or insights to share, we'd love to hear from you. Contact us today and help us grow!</p>
+                      </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="artists">
+                    <h1>Contributors</h1>
+                    <div class="artist-container containers">
+                        <div class="artist">
+                            <img src="https://avatars.githubusercontent.com/u/68268393?v=4" alt="Contributor Image" />
+                            <p>Garvit</p>
+                            <p style="color: rgba(229, 229, 229, 0.601);">Main Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-content">
+                <div class="recommended-songs">
+                    <h1>Chill Music</h1>
+                    <div class="music-player">
+                        <div class="album-cover">
+                            <img src="images/album-cover.png" id="rotatingImage" alt="Album Cover" />
+                            <span class="point"></span>
+                        </div>
+                        <h2>Garvit</h2>
+                        <p>Besomorph & Coopex</p>
+                        <audio id="song">
+                            <source src="Besomorph-Coopex-Redemption.mp3" type="audio/mpeg" />
+                        </audio>
+                        <input type="range" value="0" id="progress" />
+                        <div class="controls">
+                            <button class="backward">
+                                <i class="fa-solid fa-backward"></i>
+                            </button>
+                            <button class="play-pause-btn">
+                                <i class="fa-solid fa-play" id="controlIcon"></i>
+                            </button>
+                            <button class="forward">
+                                <i class="fa-solid fa-forward"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="pdf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>
